@@ -10,7 +10,7 @@ An independent Windows application that turns a controlled recognition transcrip
 
 ## A usable Windows app
 
-Download `Scientific-Dictation-win-x64.zip`, extract it, and run **scientific.exe**. Keep the extracted files together; the .NET runtime is included. No Wispr installation, account, API key or global .NET installation is required. Compatibility was tested on the build machine, not a Windows version matrix.
+Download `Scientific-Dictation-v0.1.1-win-x64.zip`, extract it, and run **scientific.exe**. Keep the extracted files together; the .NET runtime is included. No Wispr installation, account, API key or global .NET installation is required. Compatibility was tested on the build machine, not a Windows version matrix.
 
 1. Paste or edit a recognition transcript. Any dictation source can supply text; this app does not read another app's history or intercept its audio.
 2. Declare variable dimensions, one line each: `x: scalar`, `v: meter / second`, `t: second`. Variables have no numeric assignments and represent SI magnitudes in generated code.
@@ -97,3 +97,7 @@ Packaging uses an exact public-file manifest and project-bound path checks. The 
 ## License
 
 Original code: [MIT](LICENSE). Microsoft runtime/System.Speech licenses and notices are retained; see [NOTICE.md](NOTICE.md). Independent software, no affiliation with Wispr or Microsoft. Provided without warranty; review outputs before using them in research or production.
+
+## Release 0.1.1: compiler path privacy
+
+This rebuild maps local source paths to virtual `/_/` paths before compilation and checks every packaged PE file for literal project/profile path markers in ASCII/UTF8 and UTF16LE. Debug-symbol files are excluded too. The 0.1.0 binary packages are superseded because compiler metadata retained local build paths. The source and feature behavior are otherwise unchanged. This bounded scan does not establish the absence of every possible embedded or compressed private value.

@@ -6,7 +6,7 @@ if($LASTEXITCODE){throw 'App build failed'}
 & $env:SCIENTIFIC_DOTNET build src\Scientific.Cli\Scientific.Cli.csproj -c Release --nologo
 if($LASTEXITCODE){throw 'CLI build failed'}
 if($Publish){
- $destination=Join-Path $projectRoot 'releases\Scientific-Dictation-win-x64'
+ $destination=Join-Path $projectRoot 'releases\Scientific-Dictation-v0.1.1-win-x64'
  & $env:SCIENTIFIC_DOTNET publish src\Scientific.App\Scientific.App.csproj -c Release -r win-x64 --self-contained true -o $destination --nologo
  if($LASTEXITCODE){throw 'App publish failed'}
  & $env:SCIENTIFIC_DOTNET publish src\Scientific.Cli\Scientific.Cli.csproj -c Release -r win-x64 --self-contained true -o $destination --nologo

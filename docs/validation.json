@@ -1,12 +1,79 @@
 {
- "status":"passed within declared scope",
- "kind":"original independent native Windows app and CLI, not a Wispr patch or extracted engine",
- "build":{"sdk":"portable9.0.320","app":"passed0warnings0errors","cli":"passed0warnings0errors","system_speech":"9.0.22 package compiled; no ASR execution","self_contained_win_x64":"GUI and CLI published together with runtime"},
- "parser_tests":{"passed":52,"failed":0,"details":"test-results.json"},
- "generated_code":{"passed":9,"failed":0,"kind":"Actual parser-generated C# compiled and executed against independent numeric expectations","details":"codegen-results.json"},
- "native_ui":{"accepted_fixture":true,"ambiguity_rejection":true,"stale_preview_copy_disabled":true,"multiline_declarations_visible":true,"programmatic_renders":"assets/scientific-workbench.png and assets/ambiguity.png","microphone_initialized":false,"clipboard_changed":false},
- "fixtures":{"passed":7,"source":"actual published CLI --fixtures output","details":"examples.json"},
- "browser":{"passed":true,"checks":["seven production fixture results","ambiguous rejection and repair instruction","grouped fraction accepted","native screenshot toggle","desktop1440render","mobile390nooverflow","zero page errors"]},
- "visual_review":"Actual native accepted/rejected renders and full-page docs screenshot inspected; synthetic inputs only",
- "limits":["No microphone/ASR acoustic test or accuracy measurement","No Wispr integration/engine extraction","No automatic cross-app insertion","Clipboard action implemented but not pressed during tests","Real scalar M/L/T subset only","Symbolic domain restrictions remain obligations","Finite-double numeric evaluation is not exact real/transcendental proof or stability analysis","Exact equivalence is bounded rational-polynomial only","Windows compatibility tested only on build machine"]
+  "status": "passed within declared scope",
+  "kind": "original independent native Windows app and CLI, not a Wispr patch or extracted engine",
+  "build": {
+    "sdk": "portable9.0.320",
+    "app": "passed0warnings0errors",
+    "cli": "passed0warnings0errors",
+    "system_speech": "9.0.22 package compiled; no ASR execution",
+    "self_contained_win_x64": "GUI and CLI published together with runtime"
+  },
+  "parser_tests": {
+    "passed": 52,
+    "failed": 0,
+    "details": "test-results.json"
+  },
+  "generated_code": {
+    "passed": 9,
+    "failed": 0,
+    "kind": "Actual parser-generated C# compiled and executed against independent numeric expectations",
+    "details": "codegen-results.json"
+  },
+  "native_ui": {
+    "accepted_fixture": true,
+    "ambiguity_rejection": true,
+    "stale_preview_copy_disabled": true,
+    "multiline_declarations_visible": true,
+    "programmatic_renders": "assets/scientific-workbench.png and assets/ambiguity.png",
+    "microphone_initialized": false,
+    "clipboard_changed": false
+  },
+  "fixtures": {
+    "passed": 7,
+    "source": "actual published CLI --fixtures output",
+    "details": "examples.json"
+  },
+  "browser": {
+    "passed": true,
+    "checks": [
+      "seven production fixture results",
+      "ambiguous rejection and repair instruction",
+      "grouped fraction accepted",
+      "native screenshot toggle",
+      "desktop1440render",
+      "mobile390nooverflow",
+      "zero page errors"
+    ]
+  },
+  "visual_review": "Actual native accepted/rejected renders and full-page docs screenshot inspected; synthetic inputs only",
+  "limits": [
+    "No microphone/ASR acoustic test or accuracy measurement",
+    "No Wispr integration/engine extraction",
+    "No automatic cross-app insertion",
+    "Clipboard action implemented but not pressed during tests",
+    "Real scalar M/L/T subset only",
+    "Symbolic domain restrictions remain obligations",
+    "Finite-double numeric evaluation is not exact real/transcendental proof or stability analysis",
+    "Exact equivalence is bounded rational-polynomial only",
+    "Windows compatibility tested only on build machine"
+  ],
+  "release": "v0.1.1",
+  "build_path_privacy": {
+    "compiler": "Source root mapped to virtual /_/",
+    "pe_files_scanned": 270,
+    "encodings": [
+      "ASCII/UTF8",
+      "UTF16LE"
+    ],
+    "literal_project_profile_marker_matches": 0,
+    "debug_symbols": "Excluded from binary ZIP",
+    "limitations": "Not a full embedded/compressed-data privacy audit"
+  },
+  "rebuilt_executable_checks": {
+    "parser_tests": 52,
+    "production_fixtures": 7,
+    "actual_native_gui_render": true,
+    "microphone_initialized": false,
+    "clipboard_used": false
+  }
 }
