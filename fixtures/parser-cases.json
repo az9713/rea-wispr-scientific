@@ -1,0 +1,9 @@
+[
+ {"transcript":"two times open paren x plus three close paren squared","accepted":true},
+ {"transcript":"one over x plus one","accepted":false,"errorCode":"ambiguous-denominator"},
+ {"transcript":"one over open paren x plus one close paren","accepted":true},
+ {"transcript":"minus two squared","accepted":true},
+ {"transcript":"two meters plus three seconds","accepted":false,"errorCode":"dimension-addition"},
+ {"transcript":"v times t","accepted":true},
+ {"transcript":"one divided by zero","accepted":false,"errorCode":"zero-division"}
+]

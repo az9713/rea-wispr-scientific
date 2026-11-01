@@ -1,0 +1,344 @@
+[
+  {
+    "transcript": "two times open paren x plus three close paren squared",
+    "passed": true,
+    "result": {
+      "accepted": true,
+      "errorCode": null,
+      "error": null,
+      "normalized": "2 * ( x \u002B 3 ) squared",
+      "latex": "\\left(2\\cdot \\left(\\left(\\mathrm{x}\u002B3\\right)\\right)^{2}\\right)",
+      "code": "(2.0 * Math.Pow((@x \u002B 3.0), 2.0))",
+      "prose": "product of (2) and (power of (sum of (x) and (3)) and (2))",
+      "dimension": "dimensionless",
+      "numeric": null,
+      "notes": [
+        "Code computes SI magnitudes with double arithmetic; dimensions are reported separately.",
+        "Transcript parsing tested; microphone recognition accuracy is not tested. Review the AST before copying."
+      ],
+      "ast": {
+        "kind": "binary",
+        "value": "*",
+        "dimension": {
+          "mass": 0,
+          "length": 0,
+          "time": 0
+        },
+        "numeric": null,
+        "left": {
+          "kind": "number",
+          "value": "2",
+          "dimension": {
+            "mass": 0,
+            "length": 0,
+            "time": 0
+          },
+          "numeric": 2,
+          "left": null,
+          "right": null
+        },
+        "right": {
+          "kind": "binary",
+          "value": "^",
+          "dimension": {
+            "mass": 0,
+            "length": 0,
+            "time": 0
+          },
+          "numeric": null,
+          "left": {
+            "kind": "binary",
+            "value": "\u002B",
+            "dimension": {
+              "mass": 0,
+              "length": 0,
+              "time": 0
+            },
+            "numeric": null,
+            "left": {
+              "kind": "symbol",
+              "value": "x",
+              "dimension": {
+                "mass": 0,
+                "length": 0,
+                "time": 0
+              },
+              "numeric": null,
+              "left": null,
+              "right": null
+            },
+            "right": {
+              "kind": "number",
+              "value": "3",
+              "dimension": {
+                "mass": 0,
+                "length": 0,
+                "time": 0
+              },
+              "numeric": 3,
+              "left": null,
+              "right": null
+            }
+          },
+          "right": {
+            "kind": "number",
+            "value": "2",
+            "dimension": {
+              "mass": 0,
+              "length": 0,
+              "time": 0
+            },
+            "numeric": 2,
+            "left": null,
+            "right": null
+          }
+        }
+      }
+    }
+  },
+  {
+    "transcript": "one over x plus one",
+    "passed": true,
+    "result": {
+      "accepted": false,
+      "errorCode": "ambiguous-denominator",
+      "error": "A division followed by plus/minus needs explicit grouping. Say \u0027one over open paren x plus one close paren\u0027, or \u0027(one over x) plus one\u0027.",
+      "normalized": "1 / x \u002B 1",
+      "latex": null,
+      "code": null,
+      "prose": null,
+      "dimension": null,
+      "numeric": null,
+      "notes": [],
+      "ast": null
+    }
+  },
+  {
+    "transcript": "one over open paren x plus one close paren",
+    "passed": true,
+    "result": {
+      "accepted": true,
+      "errorCode": null,
+      "error": null,
+      "normalized": "1 / ( x \u002B 1 )",
+      "latex": "\\frac{1}{\\left(\\mathrm{x}\u002B1\\right)}",
+      "code": "(1.0 / (@x \u002B 1.0))",
+      "prose": "quotient of (1) and (sum of (x) and (1))",
+      "dimension": "dimensionless",
+      "numeric": null,
+      "notes": [
+        "Symbolic division requires a nonzero denominator; this obligation is not solved.",
+        "Code computes SI magnitudes with double arithmetic; dimensions are reported separately.",
+        "Transcript parsing tested; microphone recognition accuracy is not tested. Review the AST before copying."
+      ],
+      "ast": {
+        "kind": "binary",
+        "value": "/",
+        "dimension": {
+          "mass": 0,
+          "length": 0,
+          "time": 0
+        },
+        "numeric": null,
+        "left": {
+          "kind": "number",
+          "value": "1",
+          "dimension": {
+            "mass": 0,
+            "length": 0,
+            "time": 0
+          },
+          "numeric": 1,
+          "left": null,
+          "right": null
+        },
+        "right": {
+          "kind": "binary",
+          "value": "\u002B",
+          "dimension": {
+            "mass": 0,
+            "length": 0,
+            "time": 0
+          },
+          "numeric": null,
+          "left": {
+            "kind": "symbol",
+            "value": "x",
+            "dimension": {
+              "mass": 0,
+              "length": 0,
+              "time": 0
+            },
+            "numeric": null,
+            "left": null,
+            "right": null
+          },
+          "right": {
+            "kind": "number",
+            "value": "1",
+            "dimension": {
+              "mass": 0,
+              "length": 0,
+              "time": 0
+            },
+            "numeric": 1,
+            "left": null,
+            "right": null
+          }
+        }
+      }
+    }
+  },
+  {
+    "transcript": "minus two squared",
+    "passed": true,
+    "result": {
+      "accepted": true,
+      "errorCode": null,
+      "error": null,
+      "normalized": "- 2 squared",
+      "latex": "-(\\left(2\\right)^{2})",
+      "code": "-(Math.Pow(2.0, 2.0))",
+      "prose": "negative of (power of (2) and (2))",
+      "dimension": "dimensionless",
+      "numeric": -4,
+      "notes": [
+        "Unary minus binds less tightly than powers: minus two squared means -(2^2). Use parentheses for a negative base.",
+        "Code computes SI magnitudes with double arithmetic; dimensions are reported separately.",
+        "Transcript parsing tested; microphone recognition accuracy is not tested. Review the AST before copying."
+      ],
+      "ast": {
+        "kind": "neg",
+        "value": "-",
+        "dimension": {
+          "mass": 0,
+          "length": 0,
+          "time": 0
+        },
+        "numeric": -4,
+        "left": {
+          "kind": "binary",
+          "value": "^",
+          "dimension": {
+            "mass": 0,
+            "length": 0,
+            "time": 0
+          },
+          "numeric": 4,
+          "left": {
+            "kind": "number",
+            "value": "2",
+            "dimension": {
+              "mass": 0,
+              "length": 0,
+              "time": 0
+            },
+            "numeric": 2,
+            "left": null,
+            "right": null
+          },
+          "right": {
+            "kind": "number",
+            "value": "2",
+            "dimension": {
+              "mass": 0,
+              "length": 0,
+              "time": 0
+            },
+            "numeric": 2,
+            "left": null,
+            "right": null
+          }
+        },
+        "right": null
+      }
+    }
+  },
+  {
+    "transcript": "two meters plus three seconds",
+    "passed": true,
+    "result": {
+      "accepted": false,
+      "errorCode": "dimension-addition",
+      "error": "Addition/subtraction requires matching dimensions; zero is not automatically assigned a unit.",
+      "normalized": "2 meters \u002B 3 seconds",
+      "latex": null,
+      "code": null,
+      "prose": null,
+      "dimension": null,
+      "numeric": null,
+      "notes": [],
+      "ast": null
+    }
+  },
+  {
+    "transcript": "v times t",
+    "passed": true,
+    "result": {
+      "accepted": true,
+      "errorCode": null,
+      "error": null,
+      "normalized": "v * t",
+      "latex": "\\left(\\mathrm{v}\\cdot \\mathrm{t}\\right)",
+      "code": "(@v * @t)",
+      "prose": "product of (v) and (t)",
+      "dimension": "kg^0 m^1 s^0",
+      "numeric": null,
+      "notes": [
+        "Code computes SI magnitudes with double arithmetic; dimensions are reported separately.",
+        "Transcript parsing tested; microphone recognition accuracy is not tested. Review the AST before copying."
+      ],
+      "ast": {
+        "kind": "binary",
+        "value": "*",
+        "dimension": {
+          "mass": 0,
+          "length": 1,
+          "time": 0
+        },
+        "numeric": null,
+        "left": {
+          "kind": "symbol",
+          "value": "v",
+          "dimension": {
+            "mass": 0,
+            "length": 1,
+            "time": -1
+          },
+          "numeric": null,
+          "left": null,
+          "right": null
+        },
+        "right": {
+          "kind": "symbol",
+          "value": "t",
+          "dimension": {
+            "mass": 0,
+            "length": 0,
+            "time": 1
+          },
+          "numeric": null,
+          "left": null,
+          "right": null
+        }
+      }
+    }
+  },
+  {
+    "transcript": "one divided by zero",
+    "passed": true,
+    "result": {
+      "accepted": false,
+      "errorCode": "zero-division",
+      "error": "Division by zero is undefined.",
+      "normalized": "1 / 0",
+      "latex": null,
+      "code": null,
+      "prose": null,
+      "dimension": null,
+      "numeric": null,
+      "notes": [],
+      "ast": null
+    }
+  }
+]

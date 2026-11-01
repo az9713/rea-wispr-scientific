@@ -1,0 +1,266 @@
+{
+  "passed": 52,
+  "failed": 0,
+  "results": [
+    {
+      "name": "multiplication precedes addition",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "explicit groups override precedence",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "unary minus binds after powers",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "negative base requires parentheses",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "right associative powers",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "negative exponent",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "grouped fraction",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "ungrouped division plus rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "grouped quotient then addition",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "unknown homophone rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "unknown variable rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "implicit variable multiplication rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "empty transcript rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "injection punctuation rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "unclosed group rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "decimal rational input",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "spoken decimal ambiguity rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "zero division rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "computed constant zero division rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "zero exponent domain",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "negative real sqrt rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "log zero rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "functions require explicit grouping",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "radian sine",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "dimensioned trig rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "unit implicit numeric product",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "dimension mismatch rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "centimeter SI scale",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "derived SI units",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "dimensioned square root",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "fractional dimension rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "dimensioned exponent rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "ungrouped exponent then unit rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "symbolic dimensioned exponent rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "declared velocity times time",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "duplicate declarations rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "number word declaration rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "equivalent expanded polynomial",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "exact decimal equivalence",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "zero canonicalization",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "non-equivalent polynomial",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "symbolic cancellation not proved",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "trig identity not guessed",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "dimensions distinguish equivalence",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "integer numeric code emits double division",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "power code uses Math.Pow",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "LaTeX fraction preserves grouping",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "input budget enforced",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "token budget enforced",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "nesting budget enforced",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "overflow rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "symbolic domains remain visible",
+      "passed": true,
+      "error": null
+    }
+  ]
+}

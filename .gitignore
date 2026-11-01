@@ -1,0 +1,11 @@
+.tools/
+.runtime/
+**/bin/
+**/obj/
+*.private.json
+handoff.json
+fixtures/run-*/
+fixtures/test-run-*/
+fixtures/*-output.json
+releases/*/
+releases/*.zip
