@@ -1,12 +1,20 @@
 # Scientific Dictation
 
-**A spoken-math transcript should have one inspectable meaning before it becomes code.**
+Paste a maths sentence and inspect how it is grouped before copying the result into a document or code. Unclear wording is flagged for clarification instead of being quietly turned into a plausible-looking formula.
 
-An independent Windows application that turns a controlled recognition transcript into a typed expression tree, LaTeX source, C# SI-magnitude code and structured prose. It rejects selected ambiguous constructions, checks real scalar dimensions, and compares supported expressions using exact rational-polynomial normalization.
+'One over x plus one' could mean 1/(x + 1) or (1/x) + 1. A neat-looking formula can still express the wrong calculation. You need to see the interpretation, not just a polished rewrite of your words.
 
-[Live showcase](https://az9713.github.io/rea-wispr-scientific/) · [Runnable releases](https://github.com/az9713/rea-wispr-scientific/releases) · [Grammar](docs/grammar.md) · [Validation](docs/validation.json)
+**Example:** Say explicitly whether 'x plus one' is the whole denominator, or whether the final '+ 1' is outside the fraction. The app shows the grouping and generates document maths, C# code and a readable explanation from that same interpretation. You can also declare simple variable units to catch incompatible combinations.
+
+**What you install:** A separate Windows app for checking maths written in spoken-style words.
+
+**Current scope:** This supports a small defined maths vocabulary, not arbitrary spoken mathematics. It is independent of Wispr's engine. Text parsing and code examples were tested; the optional microphone and speech-recognition path remain untested.
+
+[Live guide](https://az9713.github.io/rea-wispr-scientific/) · [Download packages](https://github.com/az9713/rea-wispr-scientific/releases/tag/v0.1.1)
 
 ![Actual Scientific Dictation Windows workbench with synthetic input](docs/assets/scientific-workbench.png)
+
+
 
 ## A usable Windows app
 
