@@ -12,6 +12,18 @@ Paste a maths sentence and inspect how it is grouped before copying the result i
 
 [Live guide](https://az9713.github.io/rea-wispr-scientific/) · [Download packages](https://github.com/az9713/rea-wispr-scientific/releases/tag/v0.1.1)
 
+<!-- rea-release-expectations:start -->
+## What to expect from this release
+
+**Status: experimental.** Read the tested scope and remaining work below before choosing this release for your workflow.
+
+- **What you get:** A standalone Windows maths-checking workbench. You supply a transcript, inspect its interpretation and copy the result; the checks run outside Wispr.
+- **Verified so far:** The limited maths parser, unit checks, generated C# examples, comparison cases and native/browser interfaces were tested.
+- **Still needs testing or implementation:** The optional microphone and speech-recognition path, acoustic accuracy and cross-app insertion have not been tested.
+- **Relationship to the original app:** Installing it does not change Wispr's recognition engine or add these checks to its interface. Direct integration with Wispr recognition or insertion would require additional work. The tested feature is transcript checking within a small defined vocabulary.
+
+<!-- rea-release-expectations:end -->
+
 ![Actual Scientific Dictation Windows workbench with synthetic input](docs/assets/scientific-workbench.png)
 
 
